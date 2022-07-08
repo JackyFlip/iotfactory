@@ -1,10 +1,14 @@
 package org.example2.categorie;
 
-public class ObjetConnecte {
+import org.example2.bouton.Bouton;
+
+public abstract class ObjetConnecte {
 
     private Integer limiteVolts;
 
     public ObjetConnecte(Integer limiteVolts) {
         this.limiteVolts = limiteVolts;
     }
+
+    public abstract Bouton createBouton();
 }
